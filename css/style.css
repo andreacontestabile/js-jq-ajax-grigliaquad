@@ -15,15 +15,28 @@
 .container {
   display: flex;
   flex-wrap: wrap;
-  width: 600px;
+  width: 588px;
   /* box-shadow: 0 0 20px rgba(0,0,0,0.2); */
 }
 
 .square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-right: -2px;
   margin-bottom: -2px;
   height: 100px;
   width: 100px;
   border: 2px solid #333;
   background-color: #fff;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.green {
+  background-color: green;
+}
+
+.yellow {
+  background-color: yellow;
 }
