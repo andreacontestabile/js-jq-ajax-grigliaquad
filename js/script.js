@@ -4,6 +4,15 @@ Se è <= 5 il quadrato diventa giallo, se è > di 5 il quadrato diventa verde.
 Il numero ottenuto appare al centro del quadrato.  */
 
 $(document).ready(function() {
+  // Genero la mia griglia 6x6 (36 elementi):
+  // Creo un ciclo (che si ripete 36 volte) che generi un nuovo elemento div,
+  // gli associ la classe ".square"
+  // e ne faccia .append all'interno di .container
+  for (var i = 0; i < 36; i++) {
+    var newDiv = $("<div></div>");
+    newDiv.addClass("square");
+    $(".container").append(newDiv);
+  }
 
   // Creo un evento click per tutti i quadrati della griglia:
   $(".square").click(function(){
